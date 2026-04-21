@@ -10,25 +10,40 @@
       font-family: Arial, sans-serif;
       background: black;
       color: white;
-      text-align: center;
     }
 
+    /* NAVBAR */
+    .nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      padding: 15px;
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* HERO */
     .hero {
       height: 100vh;
+      background: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438') center/cover;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
     .hero h1 {
-      font-size: 40px;
-      letter-spacing: 3px;
+      font-size: 50px;
+      text-shadow: 0 0 15px #39FF14;
     }
 
     .hero p {
-      color: gray;
-      margin-bottom: 20px;
+      color: #ccc;
+      margin: 10px 0 20px;
     }
 
     .btn {
@@ -39,27 +54,105 @@
       font-weight: bold;
     }
 
+    .btn:hover {
+      background: #39FF14;
+      transition: 0.3s;
+    }
+
+    /* PRODUCTS */
     .products {
-      padding: 40px 20px;
+      padding: 60px 20px;
+      text-align: center;
     }
 
-    .product {
-      margin-bottom: 40px;
+    .products h2 {
+      margin-bottom: 30px;
+      letter-spacing: 2px;
     }
 
-    .product img {
-      width: 90%;
-      max-width: 300px;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
 
-    .product h3 {
+    .card {
+      background: #111;
+      padding: 15px;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 0 10px #39FF14;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
       margin: 10px 0 5px;
     }
 
-    .product p {
-      color: gray;
+    .card p {
+      color: #aaa;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #222;
+      color: #777;
     }
   </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="nav">FITSTUDIO93</div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>FITSTUDIO93</h1>
+    <p>Built Different.</p>
+    <a class="btn" href="https://instagram.com/fitstudio93">SHOP NOW</a>
+  </div>
+
+  <!-- PRODUCTS -->
+  <div class="products">
+    <h2>DROP 001</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300">
+        <h3>Core Black Tee</h3>
+        <p>₹699</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300">
+        <h3>Oversized Hoodie</h3>
+        <p>₹1299</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Follow @fitstudio93
+  </div>
+
+</body>
+</html>  </style>
 </head>
 
 <body>
